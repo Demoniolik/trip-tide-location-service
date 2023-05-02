@@ -6,8 +6,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ApplicationTests {
 
+	@Autowired
+	private ApplicationContext context;
+
 	@Test
 	void contextLoads() {
+		assertNotNull(context);
 	}
 
 }
