@@ -1,0 +1,10 @@
+server:
+  port: 8085
+
+service:
+  location:
+    google:
+      maps:
+        api:
+          host: "maps.googleapis.com"
+          key: ${GOOGLE_API_ACCESS_KEY:google_api_key}
